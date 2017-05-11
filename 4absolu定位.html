@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>absolu定位</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{ 
+				width: 600px;
+				height: 600px;
+				margin: 50px;
+				position: relative; 
+			}
+			.fl,.fr,.center{
+				position: absolute;
+				top:0;
+				bottom: 0;
+				width: 200px;
+			}
+			.fl{background-color: pink;left: 0;}
+			.fr{background-color: yellow;right: 0;}
+			.center{background-color: blueviolet; left: 200px;}
+		</style>
+	</head>
+	<body>
+		<div class="box clearfix">
+			<div class="fl">left</div>
+			<div class="center">center我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是</div>
+			<div class="fr">right</div>
+		</div>
+	</body>
+</html>

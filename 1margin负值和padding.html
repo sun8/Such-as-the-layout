@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>margin负值和padding</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 600px;
+				border: solid red;
+				margin: 50px;
+				overflow: hidden;
+			}
+			.clearfix:after{
+				content: "";
+				display: block;
+				height: 0;
+				clear: both;
+				overflow: hidden;
+			}
+			.clearfix{
+				zoom: 1;
+			}
+			.fl{
+				float: left;
+				background-color: yellow;
+				width: 200px;
+			}
+			.fr{
+				float: right;
+				background-color: peachpuff;
+				width: 200px;
+			}
+			.fl,.fr{
+				padding-bottom: 999px;
+				margin-bottom:-999px ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box clearfix">
+			<div class="fl">left我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是</div>
+			<div class="fr">fight</div>
+		</div>
+	</body>
+</html>

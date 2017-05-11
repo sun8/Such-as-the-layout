@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>flex弹性盒模型</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{ 
+				width: 600px;
+				display: flex;
+			}
+			.fl,.fr,.center{
+				width: 100px;
+			}
+			.fl{background-color: pink;}
+			.fr{background-color: yellow;}
+			.center{background-color: blueviolet;}
+		</style>
+	</head>
+	<body>
+		<div class="box clearfix">
+			<div class="fl">left</div>
+			<div class="center">center我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是我是</div>
+			<div class="fr">right</div>
+		</div>
+	</body>
+</html>
